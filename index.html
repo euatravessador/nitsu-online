@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nitsu Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="./assets/index-CzztqZB6.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CJ583pe5.css">
+</head>
+<body>
+  <div id="game"></div>
+
+  <div id="create" hidden></div>
+
+  <div id="hud" hidden>
+    <div id="pframe" class="panel">
+      <div class="top"><span id="p-name"></span><span class="lv">Lv.<b id="p-lvl"></b></span></div>
+      <div id="p-class" class="sub"></div>
+      <div id="p-hp" class="bar hp"><div class="fill"></div><span class="txt"></span></div>
+      <div id="p-mp" class="bar mp"><div class="fill"></div><span class="txt"></span></div>
+      <div id="p-xp" class="bar xp thin"><div class="fill"></div><span class="txt"></span></div>
+    </div>
+    <div id="target" class="panel" hidden>
+      <div id="t-name"></div>
+      <div id="t-hp" class="bar hp"><div class="fill"></div><span class="txt"></span></div>
+    </div>
+    <div id="quest" class="panel" hidden></div>
+    <button id="modechip" hidden></button>
+    <button id="btn-cfg" title="Configurações">⚙<span>Config</span></button>
+    <div id="win-cfg" class="win" hidden>
+      <div class="wt">⚙ Configurações<button class="x">✕</button></div>
+      <div id="cfg-body"></div>
+    </div>
+    <div id="log"></div>
+    <div id="chat" hidden><input id="chat-in" maxlength="120" placeholder="Enter para conversar..."></div>
+    <div id="toasts"></div>
+    <div id="bottom">
+      <div id="menu">
+        <button id="btn-inv" class="mbtn" title="Inventário (I)">🎒<i>I</i></button>
+        <button id="btn-stats" class="mbtn" title="Atributos (C)">💪<i>C</i><b id="pts-badge" hidden></b></button>
+        <button id="btn-skills" class="mbtn" title="Habilidades (K)">✨<i>K</i></button>
+      </div>
+      <div id="hotbar"></div>
+      <div class="zenbox panel"><span class="coin"></span><b id="zen"></b><small>Zenitsu</small></div>
+    </div>
+    <div id="xpbar"><div id="xp-fill"></div><span id="xp-txt"></span></div>
+
+    <div id="win-inv" class="win" hidden>
+      <div class="wt">Inventário<button class="x">✕</button></div>
+      <div id="gear"></div>
+      <div id="bag"></div>
+      <div class="inv-actions">
+        <div class="dz trash" id="dz-trash" title="Arraste um item aqui para jogar fora">🗑<small>Lixeira</small></div>
+        <div class="dz sell" id="dz-sell" title="Arraste um item aqui para vender (80% do preço da loja)">💰<small>Vender</small></div>
+        <span class="inv-hint">Arraste para o mapa para soltar no chão</span>
+      </div>
+      <div class="zenrow"><span class="coin"></span><b id="inv-zen"></b> Zenitsu</div>
+    </div>
+    <div id="win-stats" class="win" hidden>
+      <div class="wt">Atributos<button class="x">✕</button></div>
+      <div id="stats-body"></div>
+    </div>
+    <div id="win-skills" class="win" hidden>
+      <div class="wt">Habilidades<button class="x">✕</button></div>
+      <div id="skills-body"></div>
+    </div>
+    <div id="win-npc" class="win" hidden>
+      <div class="wt"><span id="npc-title"></span><button class="x">✕</button></div>
+      <div id="npc-body"></div>
+    </div>
+  </div>
+  <div id="tooltip" hidden></div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "nitsu-mods",
+  "owner": { "name": "euatravessador" },
+  "plugins": [
+    {
+      "name": "roteador",
+      "source": "./plugins/roteador",
+      "description": "Distribui as tarefas por dificuldade: fáceis vão para o Haiku, difíceis para o Opus."
+    }
+  ]
+}

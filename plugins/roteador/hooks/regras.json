@@ -1,0 +1,6 @@
+{
+  "hookSpecificOutput": {
+    "hookEventName": "SessionStart",
+    "additionalContext": "ROTEADOR DE TAREFAS (plugin roteador): classifique cada pedido pela dificuldade antes de agir, para economizar tokens.\n- FÁCIL (corrigir erro simples, renomear arquivos, buscas, formatação, ajustes pequenos, comandos rotineiros): delegue ao subagente `tarefa-facil` (Haiku) pela ferramenta Agent.\n- DIFÍCIL (planejar lançamento/arquitetura, bug que atravessa vários arquivos, refatoração grande, decisões com trocas): delegue ao subagente `tarefa-dificil` (Opus).\n- MÉDIA ou conversa/pergunta rápida: responda você mesmo, direto.\nRegras: perguntas curtas não precisam de subagente (abrir um custa mais que responder). Agrupe várias tarefas fáceis num único `tarefa-facil`. Ao delegar, passe todo o contexto necessário no prompt, pois o subagente começa do zero. Diga ao usuário em uma linha para qual modelo foi cada tarefa."
+  }
+}
